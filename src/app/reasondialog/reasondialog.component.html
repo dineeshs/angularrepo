@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Please enter the reason for rejection:</h2>
+
+<form class="example-form">
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <textarea matInput [(ngModel)]="rejectmessage" name="rejectmessage"></textarea>
+  </mat-form-field>
+</form>
+
+
+<mat-dialog-actions align="end">
+  <button mat-button cdkFocusInitial   (click)="proceed()">Proceed</button>
+  <button mat-button  mat-dialog-close >Cancel</button>
+</mat-dialog-actions>
